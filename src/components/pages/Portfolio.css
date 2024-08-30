@@ -1,0 +1,15 @@
+.portfolio {
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-card {
+  flex: 1 1 300px; /* Adjust the card size */
+  max-width: 300px;
+}
