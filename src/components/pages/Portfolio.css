@@ -10,6 +10,6 @@
 }
 
 .portfolio-card {
-  flex: 1 1 300px; /* Adjust the card size */
+  flex: 1 1 300px; 
   max-width: 300px;
 }
