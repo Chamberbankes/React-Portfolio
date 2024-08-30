@@ -1,0 +1,30 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-image: url('../assets/images/workshop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.portfolio-card {
+  flex: 1 1 300px;
+  max-width: 294px;
+  background-image: url('../assets/images/quest.png');
+  background-size: cover;
+  background-position: center;
+  height: 351px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

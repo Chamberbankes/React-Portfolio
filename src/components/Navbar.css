@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f1d1b;
+    color: white;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 1rem;
+}
+
+nav .title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #bb9457;
+    font-family: "Grenze Gotisch", serif;
+
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #bb9457;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Grenze Gotisch", serif;
+    font-size: 23px;
+}
+
+nav .active {
+    background-color: #432818;
+    color: #ffbd00;
+}
+
+nav ul li a:not(.active):hover {
+    color: #ffbd00;
+
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        background-color: #2e1a5f;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0;
+        padding: 1rem;
+    }
+}
