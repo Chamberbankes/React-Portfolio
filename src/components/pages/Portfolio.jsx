@@ -13,7 +13,6 @@ export const Portfolio = () => {
   ];
   return (
     <div className="portfolio">
-      <h1>Portfolio</h1>
       <div className="portfolio-grid">
         {cards.map((card, index) => (
           <PortfolioCard key={index} title={card.title} link={card.link} />

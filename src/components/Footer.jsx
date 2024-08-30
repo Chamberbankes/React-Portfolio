@@ -3,7 +3,11 @@ import React from 'react';
 export function Footer() {
     return (
         <footer>
-            <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Chamberbankes"
+            style= {{
+                color: "#bb9457",
+                fontSize: "29px"
+            }} >
                 GitHub
             </a>
         </footer>

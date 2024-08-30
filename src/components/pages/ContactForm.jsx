@@ -12,7 +12,7 @@ export const ContactForm = () => {
       alert('All fields are required');
       return;
     }
-    
+
     alert('Form submitted successfully');
   };
 
